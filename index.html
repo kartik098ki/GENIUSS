@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geniussss</title>
+    <title>Our Love Story</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -142,18 +142,20 @@
 
         /* Welcome Screen */
         .welcome-card {
-            background: rgba(255, 255, 255, 0.08);
-            backdrop-filter: blur(25px);
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
             border-radius: 30px;
             padding: 60px 40px;
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4),
-                        inset 0 0 30px rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3),
+                        inset 0 0 30px rgba(255, 255, 255, 0.05);
             text-align: center;
             position: relative;
             overflow: hidden;
-            margin: 0 auto;
-            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
         .welcome-card::before {
@@ -163,7 +165,7 @@
             left: -50%;
             width: 200%;
             height: 200%;
-            background: linear-gradient(45deg, transparent, rgba(255, 20, 147, 0.15), transparent);
+            background: linear-gradient(45deg, transparent, rgba(255, 20, 147, 0.1), transparent);
             animation: shimmer 3s infinite;
         }
 
@@ -173,20 +175,22 @@
         }
 
         .welcome-question {
-            font-size: 2.2rem;
+            font-size: 2rem;
             margin-bottom: 40px;
             font-weight: 300;
-            color: rgba(255, 255, 255, 0.95);
+            color: rgba(255, 255, 255, 0.9);
             position: relative;
             z-index: 1;
-            line-height: 1.4;
+            text-align: center;
         }
 
         .teddy-container {
-            font-size: 6rem;
+            font-size: 5rem;
             margin: 30px 0;
             animation: bounce 2s infinite;
-            filter: drop-shadow(0 10px 15px rgba(255, 0, 110, 0.4));
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         @keyframes bounce {
@@ -268,11 +272,11 @@
         }
 
         .modal-content {
-            background: rgba(255, 255, 255, 0.12);
-            backdrop-filter: blur(25px);
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
             border-radius: 30px;
             padding: 40px;
-            border: 1px solid rgba(255, 255, 255, 0.25);
+            border: 1px solid rgba(255, 255, 255, 0.2);
             text-align: center;
             max-width: 400px;
             animation: slideUp 0.3s ease;
@@ -293,13 +297,12 @@
             font-size: 4rem;
             margin-bottom: 20px;
             animation: bounce 1s infinite;
-            filter: drop-shadow(0 10px 15px rgba(255, 0, 110, 0.4));
         }
 
         .modal-message {
             font-size: 1.5rem;
             margin-bottom: 30px;
-            color: rgba(255, 255, 255, 0.95);
+            color: rgba(255, 255, 255, 0.9);
         }
 
         .modal-btn {
@@ -323,13 +326,13 @@
 
         /* Question Card */
         .question-card {
-            background: rgba(255, 255, 255, 0.08);
-            backdrop-filter: blur(25px);
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
             border-radius: 30px;
             padding: 60px 40px;
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4),
-                        inset 0 0 30px rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3),
+                        inset 0 0 30px rgba(255, 255, 255, 0.05);
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -342,7 +345,7 @@
             left: -50%;
             width: 200%;
             height: 200%;
-            background: linear-gradient(45deg, transparent, rgba(255, 20, 147, 0.15), transparent);
+            background: linear-gradient(45deg, transparent, rgba(255, 20, 147, 0.1), transparent);
             animation: shimmer 3s infinite;
         }
 
@@ -368,7 +371,7 @@
             font-size: 1.8rem;
             margin-bottom: 40px;
             font-weight: 300;
-            color: rgba(255, 255, 255, 0.95);
+            color: rgba(255, 255, 255, 0.9);
             position: relative;
             z-index: 1;
         }
@@ -382,9 +385,9 @@
         input {
             width: 100%;
             padding: 20px 25px;
-            border: 2px solid rgba(255, 255, 255, 0.15);
+            border: 2px solid rgba(255, 255, 255, 0.1);
             border-radius: 15px;
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.08);
             color: white;
             font-size: 1.1rem;
             transition: all 0.3s ease;
@@ -451,7 +454,7 @@
         .message {
             margin-top: 30px;
             padding: 25px;
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.08);
             border-radius: 15px;
             display: none;
             animation: fadeInUp 0.5s ease;
@@ -504,11 +507,11 @@
         }
 
         .card {
-            background: rgba(255, 255, 255, 0.08);
-            backdrop-filter: blur(25px);
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
             border-radius: 25px;
             padding: 40px 30px;
-            border: 1px solid rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             cursor: pointer;
             transition: all 0.4s ease;
             position: relative;
@@ -566,11 +569,11 @@
 
         /* Result Sections */
         .result-card {
-            background: rgba(255, 255, 255, 0.08);
-            backdrop-filter: blur(25px);
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
             border-radius: 30px;
             padding: 60px 40px;
-            border: 1px solid rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -590,7 +593,7 @@
             font-size: 1.3rem;
             line-height: 1.8;
             margin-bottom: 30px;
-            color: rgba(255, 255, 255, 0.95);
+            color: rgba(255, 255, 255, 0.9);
         }
 
         .result-image {
@@ -605,11 +608,11 @@
 
         /* Memory Game */
         .game-container {
-            background: rgba(255, 255, 255, 0.08);
-            backdrop-filter: blur(25px);
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
             border-radius: 30px;
             padding: 40px;
-            border: 1px solid rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .game-title {
@@ -702,11 +705,11 @@
 
         /* Love Letter Game */
         .letter-container {
-            background: rgba(255, 255, 255, 0.08);
-            backdrop-filter: blur(25px);
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
             border-radius: 30px;
             padding: 40px;
-            border: 1px solid rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .letter-area {
@@ -720,7 +723,7 @@
             font-family: 'Dancing Script', cursive;
             font-size: 1.8rem;
             line-height: 2;
-            color: rgba(255, 255, 255, 0.95);
+            color: rgba(255, 255, 255, 0.9);
             text-align: center;
             margin-bottom: 20px;
             max-width: 800px;
@@ -813,7 +816,7 @@
             }
             
             .welcome-question {
-                font-size: 1.6rem;
+                font-size: 1.4rem;
             }
             
             .choice-buttons {
@@ -863,6 +866,47 @@
             0%, 100% { opacity: 0; transform: scale(0); }
             50% { opacity: 1; transform: scale(1); }
         }
+
+        /* Enhanced animations */
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .float {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        /* Enhanced welcome screen */
+        .welcome-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+
+        .welcome-title {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3rem;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #ff006e, #ff9a00);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 30px rgba(255, 0, 110, 0.5);
+        }
     </style>
 </head>
 <body>
@@ -874,11 +918,14 @@
     <div id="welcome" class="section active">
         <div class="container">
             <div class="welcome-card">
-                <div class="teddy-container">🧸</div>
-                <div class="welcome-question">kya mujhe aaj reaction video mill sakti hai kya ..hehe ..</div>
-                <div class="choice-buttons">
-                    <button class="choice-btn" id="yesBtn">Yes</button>
-                    <button class="choice-btn no-btn" id="noBtn">No</button>
+                <div class="welcome-wrapper">
+                    <div class="welcome-title">Our Love Story</div>
+                    <div class="teddy-container">🧸</div>
+                    <div class="welcome-question">kya mujhe aaj reaction video mill sakti hai kya ..hehe ..</div>
+                    <div class="choice-buttons">
+                        <button class="choice-btn" id="yesBtn">Yes</button>
+                        <button class="choice-btn no-btn" id="noBtn">No</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -963,7 +1010,7 @@
                 </div>
                 <div class="letter-area">
                     <div class="letter-text">
-                        I've written you a love letter, but words got all mixed up! 
+                        I've written you a love letter, but the words got all mixed up! 
                         Can you unscramble them to reveal my true feelings?
                     </div>
                     <div class="scrambled-words" id="scrambledWords"></div>
@@ -1001,7 +1048,14 @@
                     <div class="card-title">Christmas Magic</div>
                     <div class="card-description">A special surprise awaits</div>
                 </div>
-                
+                <div class="card" id="card4">
+                    <i class="fas fa-infinity card-icon"></i>
+                    <div class="card-title">Eternal Love</div>
+                    <div class="card-description">A journey through time together</div>
+                </div>
+            </div>
+        </div>
+
         <!-- Result 1 -->
         <div id="result1" class="section">
             <div class="result-card">
@@ -1016,7 +1070,7 @@
         <!-- Result 2 -->
         <div id="result2" class="section">
             <div class="result-card">
-                <div class="result-title">My genius </div>
+                <div class="result-title">My Eternal Love</div>
                 <div class="result-message">
                     I loveeeeee u so so so so so so so so so much geniusss and I am not going to leave u.. I am here now and forever! You are my everything! 💕
                 </div>
@@ -1038,7 +1092,26 @@
             </div>
         </div>
 
-        
+        <!-- Result 4 -->
+        <div id="result4" class="section">
+            <div class="result-card">
+                <div class="result-title">Eternal Love</div>
+                <div class="result-message">
+                    <div style="font-size: 3rem; margin-bottom: 20px;">♾️</div>
+                    <p style="font-size: 1.3rem; margin-bottom: 20px;">From the moment we met, time stood still and yet flew by so fast.</p>
+                    <p>Every day with you is a new chapter in our endless love story. Through all the ups and downs, laughter and tears, my heart has always been yours.</p>
+                    <p style="margin-top: 20px; font-style: italic;">"Forever isn't long enough with you, my love."</p>
+                    <div style="margin-top: 30px; display: flex; justify-content: center; gap: 15px;">
+                        <span style="font-size: 2rem;">🌅</span>
+                        <span style="font-size: 2rem;">❤️</span>
+                        <span style="font-size: 2rem;">🌙</span>
+                    </div>
+                </div>
+                <button class="btn" id="backToCards4">Back to Choices</button>
+            </div>
+        </div>
+    </div>
+
     <script>
         // Create particles
         function createParticles() {
@@ -1191,15 +1264,6 @@
                         if (matchedPairs === emojis.length) {
                             setTimeout(() => {
                                 document.getElementById('gameComplete').classList.add('show');
-                            createSparkles();
-                            createConfetti();
-                            createFloatingHearts();
-                            setTimeout(() => {
-                                document.getElementById('gameComplete').innerHTML = `
-                                    <h2>🎉 Congratulations! 🎉</h2>
-                                    <button class="btn" id="continue3" style="margin-top: 20px;">Play Another Game</button>
-                                `;
-                            }, 5000);
                             }, 500);
                         }
                     }, 600);
@@ -1225,8 +1289,8 @@
             { scrambled: 'EVOL', correct: 'LOVE', hint: 'The most powerful feeling in the universe' },
             { scrambled: 'RETHA', correct: 'HEART', hint: 'Where my love for you lives forever' },
             { scrambled: 'UFOTRREE', correct: 'FOREVER', hint: 'How long I want to be with you' },
-            { scrambled: 'SMEIL', correct: 'SMILE', hint: 'What I do whenever I think of you' },
-            { scrambled: 'YHPAP', correct: 'HAPPY', hint: 'What you make me feel every day' }
+            { scrambled: 'SMILE', correct: 'SMILE', hint: 'What I do whenever I think of you' },
+            { scrambled: 'HPAYP', correct: 'HAPPY', hint: 'What you make me feel every day' }
         ];
         
         let foundWords = 0;
@@ -1300,14 +1364,6 @@
                 if (foundWords === loveWords.length) {
                     setTimeout(() => {
                         document.getElementById('letterComplete').classList.add('show');
-                        createConfetti();
-                        createFloatingHearts();
-                        setTimeout(() => {
-                            document.getElementById('letterComplete').innerHTML = `
-                                <h2>💌 Letter Complete! 💌</h2>
-                                <button class="btn" id="continue4" style="margin-top: 20px;">Continue to Your Gifts</button>
-                            `;
-                        }, 5000);
                     }, 500);
                 }
             }
@@ -1337,7 +1393,7 @@
                 hintText.textContent = `Hint for "${incorrectWord.textContent}": ${incorrectWord.dataset.hint}`;
                 hintContainer.classList.add('show');
                 
-                // Highlight word
+                // Highlight the word
                 incorrectWord.classList.add('selected');
                 setTimeout(() => {
                     incorrectWord.classList.remove('selected');
@@ -1418,68 +1474,6 @@
                     sparkle.style.top = Math.random() * 100 + '%';
                     container.appendChild(sparkle);
                     setTimeout(() => sparkle.remove(), 2000);
-                }, i * 100);
-            }
-        }
-
-        // Create confetti effect
-        function createConfetti() {
-            const colors = ['#ff006e', '#ff4e50', '#ff9a00', '#9370db', '#6a5acd'];
-            const confettiCount = 100;
-            
-            for (let i = 0; i < confettiCount; i++) {
-                setTimeout(() => {
-                    const confetti = document.createElement('div');
-                    confetti.style.position = 'fixed';
-                    confetti.style.width = '10px';
-                    confetti.style.height = '10px';
-                    confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-                    confetti.style.left = Math.random() * 100 + '%';
-                    confetti.style.top = '-10px';
-                    confetti.style.opacity = Math.random() + 0.5;
-                    confetti.style.transform = `rotate(${Math.random() * 360}deg)`;
-                    confetti.style.transition = 'all 2s ease-out';
-                    confetti.style.zIndex = '9999';
-                    
-                    document.body.appendChild(confetti);
-                    
-                    setTimeout(() => {
-                        confetti.style.top = '100%';
-                        confetti.style.transform = `rotate(${Math.random() * 720}deg)`;
-                        confetti.style.opacity = '0';
-                    }, 10);
-                    
-                    setTimeout(() => confetti.remove(), 2000);
-                }, i * 20);
-            }
-        }
-
-        // Create floating hearts effect
-        function createFloatingHearts() {
-            const heartSymbols = ['❤️', '💕', '💖', '💗', '💝'];
-            const heartCount = 30;
-            
-            for (let i = 0; i < heartCount; i++) {
-                setTimeout(() => {
-                    const heart = document.createElement('div');
-                    heart.textContent = heartSymbols[Math.floor(Math.random() * heartSymbols.length)];
-                    heart.style.position = 'fixed';
-                    heart.style.fontSize = (20 + Math.random() * 20) + 'px';
-                    heart.style.left = Math.random() * 100 + '%';
-                    heart.style.top = '100%';
-                    heart.style.opacity = Math.random() + 0.5;
-                    heart.style.transition = 'all 3s ease-out';
-                    heart.style.zIndex = '9999';
-                    
-                    document.body.appendChild(heart);
-                    
-                    setTimeout(() => {
-                        heart.style.top = '-50px';
-                        heart.style.transform = `translateX(${(Math.random() - 0.5) * 200}px) rotate(${Math.random() * 360}deg)`;
-                        heart.style.opacity = '0';
-                    }, 10);
-                    
-                    setTimeout(() => heart.remove(), 3000);
                 }, i * 100);
             }
         }
